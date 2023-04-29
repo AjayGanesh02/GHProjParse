@@ -9,7 +9,7 @@ class GHProjectParse {
 
   async listProjects() {
     const repos = await this.octokit.paginate("GET /user/repos");
-    const filtered = repos.filter((elt) => elt.topics?.includes("portfolio"));
+    const filtered = repos.filter((elt) => elt.topics?.includes("project"));
     return filtered;
   }
 }
