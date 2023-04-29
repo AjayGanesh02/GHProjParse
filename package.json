@@ -24,5 +24,8 @@
   "license": "ISC",
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "dependencies": {
+    "octokit": "^2.0.14"
+  }
 }
